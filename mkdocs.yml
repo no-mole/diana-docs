@@ -5,6 +5,17 @@ theme:
   features:
     - navigation.tabs
 
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 nav:
 - Index: index.md
 - Getting started:
@@ -13,4 +24,5 @@ nav:
   - OIDC: getting-started/OIDC.md
 - 使用:
   - 快速开始: usage/quick-start.md
-  
+- 参考:
+  - Shiro: reference/shiro.md
