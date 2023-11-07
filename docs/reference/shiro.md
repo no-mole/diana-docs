@@ -51,7 +51,17 @@ classDiagram
         <<interface>>
     }
 
+    class SessionManager {
+        <<interface>>
+    }
+
     SecurityManager --|> Authenticator
     SecurityManager --|> Authorizer
-
+    SecurityManager --|> SessionManager
 ```
+
+## 流程
+
+1. 获取`Subject` 如何从请求中获取`Subject`
+2. `Subject`如何进行认证
+3. `Subject`如何进行授权

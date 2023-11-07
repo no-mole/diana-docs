@@ -1,4 +1,6 @@
-site_name: Diama Docs
+site_name: Diana Docs
+repo_name: no-mole/diana-docs
+repo_url: https://github.com/no-mole/diana-docs
 theme:
   name: material
   language: zh
@@ -16,6 +18,10 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - glightbox
+
 nav:
 - Index: index.md
 - Getting started:
@@ -24,5 +30,6 @@ nav:
   - OIDC: getting-started/OIDC.md
 - 使用:
   - 快速开始: usage/quick-start.md
+  - 应用: usage/应用.md
 - 参考:
   - Shiro: reference/shiro.md
