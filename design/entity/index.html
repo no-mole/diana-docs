@@ -152,7 +152,7 @@
   
     
   
-  Index
+  首页
 
       </a>
     </li>
@@ -169,7 +169,7 @@
         <a href="../../getting-started/%E4%BB%80%E4%B9%88%E6%98%AFDiana/" class="md-tabs__link">
           
   
-  Getting started
+  概念
 
         </a>
       </li>
@@ -206,6 +206,24 @@
           
   
   参考
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../M2M/" class="md-tabs__link">
+          
+  
+  设计
 
         </a>
       </li>
@@ -268,7 +286,7 @@
         
   
   <span class="md-ellipsis">
-    Index
+    首页
   </span>
   
 
@@ -302,7 +320,7 @@
             
   
   <span class="md-ellipsis">
-    Getting started
+    概念
   </span>
   
 
@@ -312,7 +330,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Getting started
+            概念
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -462,6 +480,26 @@
 
               
             
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    用户管理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -535,6 +573,92 @@
   
 
     
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    设计
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            设计
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../M2M/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    M2M
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据库设计
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -555,6 +679,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    授权场景
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -572,7 +711,9 @@
 
 
 <h1 id="_1">实体</h1>
-<p>从三个维度来考虑。</p>
+<p>从具体的场景来思考系统可能涉及到的实体。系统主要是实现认证和授权两个功能。</p>
+<h2 id="_2">授权场景</h2>
+<p>用户提供身份信息想系统证明他是他声明的用户，</p>
 <ul>
 <li>用户</li>
 <li>用户</li>
@@ -593,6 +734,8 @@
 <ul>
 <li>登录 用户是否可以登录用户，是否可以强制退出登录</li>
 </ul>
+<p>APP添加主体</p>
+<p>是从namespace获取用户、组、角色、组织的数据。</p>
 
 
 

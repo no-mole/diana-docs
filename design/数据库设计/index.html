@@ -9,6 +9,8 @@
       
       
       
+        <link rel="prev" href="../M2M/">
+      
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +18,7 @@
     
     
       
-        <title>M2M - Diana Docs</title>
+        <title>数据库设计 - Diana Docs</title>
       
     
     
@@ -71,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -101,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              M2M
+              数据库设计
             
           </span>
         </div>
@@ -161,7 +168,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../%E4%BB%80%E4%B9%88%E6%98%AFDiana/" class="md-tabs__link">
+        <a href="../../getting-started/%E4%BB%80%E4%B9%88%E6%98%AFDiana/" class="md-tabs__link">
           
   
   概念
@@ -211,11 +218,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../design/M2M/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../M2M/" class="md-tabs__link">
           
   
   设计
@@ -335,7 +344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E4%BB%80%E4%B9%88%E6%98%AFDiana/" class="md-nav__link">
+      <a href="../../getting-started/%E4%BB%80%E4%B9%88%E6%98%AFDiana/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -355,7 +364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../OAuth2.0/" class="md-nav__link">
+      <a href="../../getting-started/OAuth2.0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -375,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../OIDC/" class="md-nav__link">
+      <a href="../../getting-started/OIDC/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -572,6 +581,8 @@
       
   
   
+    
+  
   
     
     
@@ -581,12 +592,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -600,7 +611,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             设计
@@ -613,7 +624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/M2M/" class="md-nav__link">
+      <a href="../M2M/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -631,9 +642,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../design/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    数据库设计
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -642,6 +673,40 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    用户
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    用户和其它实体的管理设计
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -671,6 +736,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    用户
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    用户和其它实体的管理设计
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -688,9 +777,35 @@
   
 
 
-  <h1>M2M</h1>
+<h1 id="_1">数据库设计</h1>
+<h2 id="_2">用户</h2>
+<p>Diana的用户池中的用户是命名空间下共享的，只是用户的一些非标识属性不是共享的。</p>
+<ul>
+<li>标识属性</li>
+<li>用户id</li>
+<li>用户名</li>
+<li>邮箱</li>
+<li>手机号</li>
+<li>非标识属性</li>
+<li>昵称</li>
+<li>头像</li>
+<li>签名</li>
+<li>etc.</li>
+</ul>
+<p>共享的可修改的属性的修改是对全局可见的，非共享的属性的修改只在当前命名空间下可见。</p>
+<p>但是为了提升系统的灵活性，可以考虑每个命名空间用户池隔离的设计。</p>
+<h2 id="_3">用户和其它实体的管理设计</h2>
+<div class="highlight"><pre><span></span><code><span class="kd">type</span><span class="w"> </span><span class="nx">User</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">Uid</span><span class="w"> </span><span class="kt">string</span>
+<span class="w">    </span><span class="nx">Username</span><span class="w"> </span><span class="kt">string</span>
+<span class="w">    </span><span class="nx">Email</span><span class="w"> </span><span class="kt">string</span>
+<span class="w">    </span><span class="nx">Phone</span><span class="w"> </span><span class="kt">string</span><span class="w">   </span>
+<span class="p">}</span>
 
+<span class="kd">type</span><span class="w"> </span><span class="nx">UserInfo</span><span class="w"> </span><span class="nx">strcut</span><span class="w"> </span><span class="p">{</span>
 
+<span class="p">}</span>
+</code></pre></div>
 
 
 
