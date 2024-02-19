@@ -1,17 +1,29 @@
-# Welcome to MkDocs
+# 介绍
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+ID服务是一个提供身份认证、授权和访问控制的服务。主要聚焦身份认证和用户管理。
 
-## Commands
+## 特性
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* Oauth 2.0和OIDC
+* SSO
+* 用户管理
+  - 身份源数据导入
+  - 用户组管理
+  - 组织结构支持
+* 访问控制
+  - RBAC
+  - ABAC
 
-## Project layout
+## 使用场景
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* **不关注用户的登录、注册和注销功能** 应用可以接入ID服务，通过OIDC协议来进行用户的登录、注册和注销
+* **需要基本的用户管理功能** ID服务可以对用户进行分组管理、按照组织层级管理
+* **服务间通信需要保护** 可以使用ID服务的M2M加强安全
+* **访问控制** ID服务提供RBAC（基于角色的访问控制）和ABAC（基于属性的访问控制）
+
+RBAC还在测试中，ABAC功能正在研发中
+
+## 下一步
+
+* [概念](./getting-started/什么是Diana)
+* [快速使用](./usage/quick-start)

@@ -18,18 +18,25 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 plugins:
   - glightbox
 
 nav:
-- Index: index.md
-- Getting started:
+- 首页: index.md
+- 概念:
   - 什么是Diana: getting-started/什么是Diana.md
   - OAuth2.0: getting-started/OAuth2.0.md
   - OIDC: getting-started/OIDC.md
 - 使用:
   - 快速开始: usage/quick-start.md
   - 应用: usage/应用.md
+  - 用户管理: usage/用户管理.md
 - 参考:
   - Shiro: reference/shiro.md
+- 设计:
+  - M2M: design/M2M.md
+  - 数据库设计: design/数据库设计.md

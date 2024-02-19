@@ -2,6 +2,7 @@
 title: Shiro学习
 ---
 
+# 术语
 在学习Shiro的之前，需要了解Shiro相关的术语。
 
 * Subject 使用应用的实体总称。可以是一个用户、一个服务、一个进程等。
@@ -16,12 +17,20 @@ title: Shiro学习
 !!! note
     Shiro对Authorization和OAuth 2.0的定义是有区别的。在OAuth 2.0语境下，授权是指第三方应用可以代替用户拥有哪些权限。使用`scope`字段表示用户授予第三方应用的权限。
 
+# 特性
+
+* 使用简单
+* 支持多个可插拔数据源认证和授权（LDAP、JDBC、ActiveDirectory等）
+* 基于角色或者适当粒度的许可授权
+* 缓存优先来提升应用性能
+* 实现了session管理
+* 
 ## Permission的粒度级别
 
 Shiro对permission定义了三个级别：
 
 * Resource Level 用户可以开房间的所有的门
-* Instance Level 用户可以看主卧的门
+* Instance Level 用户可以开主卧的门
 * Attribute Leve 对资源或者实例的某些属性的访问权限
 
 文档[Understanding Permissions in Apache Shiro](https://shiro.apache.org/permissions.html)解释了Shiro的权限的用法。
@@ -32,8 +41,6 @@ Shiro对permission定义了三个级别：
   ![Image title](../img/ShiroArchitecture.png){ width="600" }
   <figcaption>Shiro的架构</figcaption>
 </figure>
-
-## 使用
 
 Shiro的核心就是`SecurityManager`来完成认证、授权的流程。
 
